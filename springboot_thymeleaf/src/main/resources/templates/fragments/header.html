@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Header Fragment</title>
+</head>
+<body>
+
+<div th:fragment="header">
+    <h1>Welcome to My Website</h1>
+	<td>
+    <img th:src="@{https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/240510262_945810906150159_587269286900149586_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEIxmHJCV6n88zxjF0Zr4d_usWY1N7ye6m6xZjU3vJ7qfty4QPmdFab4YG5lEHiCysl8A4SJVBzeTsZOIvnXKQg&_nc_ohc=8QzlQY-ypowQ7kNvgGyCptV&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=Ax5qhAw-g0KxE0rV5wM0bX2&oh=00_AYBPyfhug28KYQBDaZ6YzZp90VBzsQqTihOxqeEgA8GXFw&oe=67291F18}" height="300" width="200" />
+	</td>
+
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/admin/categories}">Categories</a></li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>
